@@ -61,7 +61,14 @@ h2{
     line-height: 1.3125;
     font-weight: 500;
 }
+
 /* 間距 */
+.ml-12{
+    margin-left: 12px;
+}
+.mr-12{
+    margin-right: 12px;
+}
 .mb-4{
     margin-bottom: 4px;
 }
@@ -131,18 +138,21 @@ h2{
 
 /* 表頭 */
 .box1{
+    /* border: 1px solid red; */
     width: 304px;
-    margin: 0 auto;
-    padding: 308px 0px;
-    margin-bottom: 56px;
+    margin: 0 auto; 
 }
 
 header{
+    height: 100vh;
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week2/banner.png);
     color: #FFFFFF;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 958px;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -155,12 +165,17 @@ h1{
 .icon{
     margin-top: 40px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+}
+
+.icon a:hover{
+    opacity: 0.6;
 }
 
 /* about */
 
 .about{
+    margin-top: 56px;
     text-align: center;
 }
 
@@ -184,7 +199,8 @@ h1{
     align-items: center;
 }
 
-.list-style{
+.about li::before{
+    content: "";
     width: 22px;
     height: 22px;
     background-color: #891818;
@@ -193,34 +209,26 @@ h1{
 }
 
 
+
 /* My Brand */
 
 .brand{
     padding-top: 56px;
     color: #FFFFFF;
     background-color: #000000;
-    border: 1xp solid #707070;
+    border: 1px solid #707070;
     text-align: center;
     padding-bottom: 100px;
     margin-bottom: 56px;
 }
-.brand img{
-    width: 796px;
-    height: 416px;
-    /* margin-top: 60px;
-    margin-bottom: 40px; */
-}
-
 
 .brand-list{
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-}
-
-.brand-list img{
-    width: 588px;
 }
 
 /* work */
